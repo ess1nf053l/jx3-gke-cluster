@@ -20,4 +20,8 @@ spec:
                 port:
                   number: 80
             path: "/hook"
-      host: hook-jx.35.238.69.170.nip.io
+      host: hook-jx.dev.jenkinsxlab.com
+  tls:
+    - hosts:
+        - hook-jx.dev.jenkinsxlab.com
+      secretName: "tls-dev-jenkinsxlab-com-p"

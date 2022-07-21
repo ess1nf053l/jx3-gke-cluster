@@ -28,12 +28,13 @@ spec:
   - key: production
   ingress:
     domain: dev.jenkinsxlab.com
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: "uaemmx@gmail.com"
+      email: uaemmx@gmail.com
       enabled: true
-      production: false
+      production: true
   pipelineUser:
     username: ess1nf053l
   repository: nexus

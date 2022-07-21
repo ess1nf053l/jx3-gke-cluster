@@ -1,5 +1,35 @@
 - namespace: cert-manager
   path: helmfiles/cert-manager/helmfile.yaml
+  releases:
+  - annotations:
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
+    apiVersion: v1
+    appVersion: v1.8.2
+    description: A Helm chart for cert-manager
+    firstDeployed: "2022-07-21T21:31:23Z"
+    home: https://github.com/cert-manager/cert-manager
+    icon: https://raw.githubusercontent.com/cert-manager/cert-manager/master/logo/logo.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    lastDeployed: "2022-07-21T21:31:23Z"
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=sandbox-devops-345305&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-wired-krill%2Fnamespace_name%2Fcert-manager%2Fcontainer_name%2Fcert-manager&dateRangeUnbound=both
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+    name: cert-manager
+    releaseName: cert-manager
+    repositoryName: jetstack
+    repositoryUrl: https://charts.jetstack.io
+    resourcePath: config-root/namespaces/cert-manager/cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    version: v1.8.2
 - namespace: jx-production
   path: helmfiles/jx-production/helmfile.yaml
   releases:
@@ -37,6 +67,52 @@
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v2
+    appVersion: 0.11.1
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    firstDeployed: "2022-07-21T21:31:33Z"
+    home: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
+    icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    lastDeployed: "2022-07-21T21:31:33Z"
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=sandbox-devops-345305&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-wired-krill%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fexternal-dns&dateRangeUnbound=both
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: external-dns
+    releaseName: external-dns
+    repositoryName: bitnami
+    repositoryUrl: https://charts.bitnami.com/bitnami
+    resourcePath: config-root/namespaces/jx/external-dns
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    - https://github.com/bitnami/bitnami-docker-external-dns
+    - https://github.com/kubernetes-sigs/external-dns
+    version: 6.4.5
+  - apiVersion: v1
+    appVersion: 0.0.24
+    description: Acme
+    firstDeployed: "2022-07-21T21:31:37Z"
+    icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
+    lastDeployed: "2022-07-21T21:31:37Z"
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=sandbox-devops-345305&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-wired-krill%2Fnamespace_name%2Fjx%2Fcontainer_name%2Facme&dateRangeUnbound=both
+    name: acme
+    releaseName: acme-jx
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    version: 0.0.24
   - apiVersion: v1
     appVersion: 1.1.168
     description: A Helm chart for the resources for JX Boot

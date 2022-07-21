@@ -13,6 +13,16 @@
   </thead>
   <tbody>
     <tr>
+		      <td colspan='5'><h3>cert-manager</h3></td>
+		    </tr>
+	    <tr>
+	      <td>cert-manager</td>
+	      <td><a href='https://github.com/cert-manager/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/cert-manager/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
+	      <td>v1.8.2</td>
+	      <td></td>
+	      <td><a href='https://github.com/cert-manager/cert-manager'>source</a></td>
+	    </tr>
+    <tr>
 		      <td colspan='5'><h3>jx-production</h3></td>
 		    </tr>
 	    <tr>
@@ -36,6 +46,20 @@
 		      <td colspan='5'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
+	      <td>external-dns</td>
+	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns' title='ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.'> <img src='https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png' width='24px' height='24px'> external-dns </a></td>
+	      <td>6.4.5</td>
+	      <td></td>
+	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns'>source</a></td>
+	    </tr>
+    <tr>
+	      <td>acme-jx</td>
+	      <td><a href='' title='Acme'> <img src='https://avatars2.githubusercontent.com/u/35583233?s=200&v=4' width='24px' height='24px'> acme </a></td>
+	      <td>0.0.24</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 	      <td>jxboot-helmfile-resources</td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
 	      <td>1.1.168</td>

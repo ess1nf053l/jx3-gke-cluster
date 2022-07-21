@@ -19,4 +19,8 @@ spec:
                 name: nexus
                 port:
                   number: 80
-      host: nexus-jx.35.238.69.170.nip.io
+      host: nexus-jx.dev.jenkinsxlab.com
+  tls:
+    - hosts:
+        - nexus-jx.dev.jenkinsxlab.com
+      secretName: "tls-dev-jenkinsxlab-com-p"

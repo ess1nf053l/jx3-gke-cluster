@@ -42,13 +42,14 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: 35.238.69.170.nip.io
+    domain: dev.jenkinsxlab.com
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -cert-manager.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: uaemmx@gmail.com
+      enabled: true
+      production: true
   pipelineUser:
     username: ess1nf053l
   repository: nexus
@@ -63,9 +64,9 @@ jxRequirements:
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
-  enabled: false
+  enabled: true
 jxRequirementsIngressTLS:
-  enabled: false
+  enabled: true
 jxRequirementsKuberhealthy:
   enabled: false
 jxRequirementsTLSCheck:

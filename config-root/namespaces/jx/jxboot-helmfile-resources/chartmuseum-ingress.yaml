@@ -19,4 +19,8 @@ spec:
                 name: jenkins-x-chartmuseum
                 port:
                   number: 8080
-      host: chartmuseum-jx.35.238.69.170.nip.io
+      host: chartmuseum-jx.dev.jenkinsxlab.com
+  tls:
+    - hosts:
+        - chartmuseum-jx.dev.jenkinsxlab.com
+      secretName: "tls-dev-jenkinsxlab-com-p"

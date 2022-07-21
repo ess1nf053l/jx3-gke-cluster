@@ -1,0 +1,20 @@
+# Source: acme/templates/cert-manager-prod-certificate.yaml
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: "tls-dev-jenkinsxlab-com-p"
+  labels:
+    jenkins.io/letsencrypt-service: production
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'acme-jx'
+  namespace: jx
+spec:
+  secretName: "tls-dev-jenkinsxlab-com-p"
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: "*.dev.jenkinsxlab.com"
+  dnsNames:
+    - "*.dev.jenkinsxlab.com"
+    - "dev.jenkinsxlab.com"

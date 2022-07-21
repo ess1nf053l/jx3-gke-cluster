@@ -19,7 +19,7 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.35.238.69.170.nip.io
+    - host: dashboard-jx.dev.jenkinsxlab.com
       http:
         paths:
           - pathType: ImplementationSpecific
@@ -28,3 +28,7 @@ spec:
                 name: jx-pipelines-visualizer
                 port:
                   name: http
+  tls:
+    - secretName: tls-dev-jenkinsxlab-com-p
+      hosts:
+        - dashboard-jx.dev.jenkinsxlab.com
