@@ -27,12 +27,12 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: 35.238.69.170.nip.io
+    domain: dev.jenkinsxlab.com
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
+      email: "uaemmx@gmail.com"
+      enabled: true
       production: false
   pipelineUser:
     username: ess1nf053l
