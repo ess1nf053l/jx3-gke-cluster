@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - ess1nf053l/jx3-gke-cluster
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.35.238.69.170.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
