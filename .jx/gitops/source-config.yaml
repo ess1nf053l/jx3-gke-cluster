@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: jx3-demo-golang
     - name: jx3-golang-demo
+    - name: test-golang
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
